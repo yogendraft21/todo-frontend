@@ -5,7 +5,7 @@ signup.addEventListener("click",()=>{
 })
 
 const userSignup=async()=>{
-    const url = "http://localhost:8081/signup"
+    const url = "https://nice-red-fossa-gown.cyclic.app/signup"
 
     let email = document.getElementById("sign_email").value
     let password = document.getElementById("sign_password").value
@@ -32,7 +32,7 @@ login.addEventListener("click",()=>{
 })
 
 const userlogin=async()=>{
-    const url = "http://localhost:8081/login"
+    const url = "https://nice-red-fossa-gown.cyclic.app/login"
 
     let email = document.getElementById("email").value
     let password = document.getElementById("password").value

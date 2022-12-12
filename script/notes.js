@@ -1,5 +1,5 @@
 const getNotes = async()=>{
-    const url = "http://localhost:8081/todo"
+    const url = "https://nice-red-fossa-gown.cyclic.app/todo"
     const res  =await fetch(url,{
         headers:{
             'Content-type':'application/json',
@@ -38,7 +38,7 @@ add.addEventListener('click',()=>{
 
 
 const addTodo = async()=>{
-    const url = "http://localhost:8081/todo/create";
+    const url = "https://nice-red-fossa-gown.cyclic.app/create";
 
     const tname = document.getElementById("taskname").value
     const status = document.getElementById("status").value
@@ -69,7 +69,7 @@ add.addEventListener('click',()=>{
 const delTodo = async()=>{
     // console.log("hello")
     const id = document.getElementById("todo_id").value;
-    const url = `http://localhost:8081/todo/delete/${id}`;
+    const url = `https://nice-red-fossa-gown.cyclic.app/delete/${id}`;
     try {
         const res = await fetch(url,{
             method:'DELETE',
@@ -90,7 +90,7 @@ const delTodo = async()=>{
 const updateTodo = async()=>{
     // console.log("hello")
     const id = document.getElementById("todo_id").value;
-    const url = `http://localhost:8081/todo/edit/${id}`;
+    const url = `https://nice-red-fossa-gown.cyclic.app/edit/${id}`;
 
     const tname = document.getElementById("taskname").value
     const status = document.getElementById("status").value
