@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main>
+
+   
+    <div class="notes" id="note">
+        <h1>Your Notes</h1>
+    </div>
+
+    <div class="form">
+        <label for="">ID only for Delete and Update</label><br>
+        <input id="todo_id" type="text"><br>
+        <label for="">Taskname</label><br>
+        <input id="taskname" type="text"><br>
+        <label for="">Status</label><br>
+        <input id="status" type="text"><br>
+        <label for="">tag</label><br>
+        <input id="tag" type="text"><br>
+        <button id="add">ADD</button>
+        <button id="del" onclick="delTodo()">Delete</button>
+        <button id="update"onclick="updateTodo()">Update</button>
+    </div>
+</main>
+    <script src="./script/notes.js"></script>
+</body>
+</html>
